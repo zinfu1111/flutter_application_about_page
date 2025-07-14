@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_about_page/Model/Album.dart';
 
-class AlbumView extends StatelessWidget {
-  const AlbumView({super.key, required this.album});
+class AlbumCard extends StatelessWidget {
+  const AlbumCard({super.key, required this.album});
   final Album album;
 
   @override

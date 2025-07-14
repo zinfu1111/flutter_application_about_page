@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_about_page/Model/Song.dart';
 
-class SongView extends StatelessWidget {
-  const SongView({super.key, required this.song});
+class SongCard extends StatelessWidget {
+  const SongCard({super.key, required this.song});
   final Song song;
 
   @override

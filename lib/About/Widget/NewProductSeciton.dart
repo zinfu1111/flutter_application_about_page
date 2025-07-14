@@ -1,9 +1,11 @@
 // TODO Implement this library.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_about_page/Model/NewProduct.dart';
 
 class NewProductSeciton extends StatelessWidget {
-  const NewProductSeciton({super.key});
+  const NewProductSeciton({super.key, required this.newProduct});
+  final NewProduct newProduct;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,7 @@ class NewProductSeciton extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Reincarnation',
+                  newProduct.title,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 14,
@@ -39,7 +41,7 @@ class NewProductSeciton extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '單曲 • 2025年',
+                  '${newProduct.type} • ${newProduct.year}',
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 14,
@@ -51,11 +53,7 @@ class NewProductSeciton extends StatelessWidget {
             Container(
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(3)),
-              child: Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgK2HmDqnzBO9dSvPtLQzLmaSELFhMgzPxg&s',
-                width: 60,
-                height: 60,
-              ),
+              child: Image.network(newProduct.imageUrl, width: 60, height: 60),
             ),
           ],
         ),

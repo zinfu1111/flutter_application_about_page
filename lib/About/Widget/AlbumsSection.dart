@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_about_page/Model/Album.dart';
-import 'package:flutter_application_about_page/View/AlbumView.dart';
+import 'package:flutter_application_about_page/About/Widget/AlbumCard.dart';
 
 class AlbumsSection extends StatelessWidget {
   const AlbumsSection({super.key, required this.albums});
@@ -24,7 +24,7 @@ class AlbumsSection extends StatelessWidget {
           SizedBox(
             height: 200,
             child: ListView.separated(
-              itemBuilder: (context, index) => AlbumView(album: albums[index]),
+              itemBuilder: (context, index) => AlbumCard(album: albums[index]),
               separatorBuilder: (context, index) => const SizedBox(width: 10),
               itemCount: albums.length,
               scrollDirection: Axis.horizontal,

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_about_page/Model/Artis.dart';
 
 class AvaterSection extends StatelessWidget {
-  const AvaterSection({super.key});
+  const AvaterSection({super.key, required this.artist});
+  final Artist artist;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Image.network(
-          'https://hips.hearstapps.com/hmg-prod/images/yuri-6811ba45948be.jpg?crop=0.836xw:0.574xh;0.0782xw,0.223xh&resize=640:*',
+          artist.imageUrl,
           width: double.infinity,
           height: 350,
           fit: BoxFit.fill,
@@ -31,7 +33,7 @@ class AvaterSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Yuuri',
+                artist.name,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 35,
@@ -39,7 +41,7 @@ class AvaterSection extends StatelessWidget {
                 ),
               ),
               Text(
-                '30.4萬位訂閱者',
+                artist.subscriberCount,
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 14,

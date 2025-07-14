@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_about_page/Model/Song.dart';
-import 'package:flutter_application_about_page/View/SongView.dart';
+import 'package:flutter_application_about_page/About/Widget/SongCard.dart';
 
 class HotSongSection extends StatelessWidget {
   const HotSongSection({super.key, required this.songs});
@@ -24,7 +24,7 @@ class HotSongSection extends StatelessWidget {
           for (var song in songs)
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
-              child: SongView(song: song),
+              child: SongCard(song: song),
             ),
         ],
       ),
