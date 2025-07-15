@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/Album.dart';
+import 'package:flutter_application_about_page/model/album.dart';
 
 class AlbumCard extends StatelessWidget {
   const AlbumCard({super.key, required this.album});

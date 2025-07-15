@@ -1,10 +1,10 @@
 // TODO Implement this library.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/NewProduct.dart';
+import 'package:flutter_application_about_page/model/new_product.dart';
 
-class NewProductSeciton extends StatelessWidget {
-  const NewProductSeciton({super.key, required this.newProduct});
+class NewProductSection extends StatelessWidget {
+  const NewProductSection({super.key, required this.newProduct});
   final NewProduct newProduct;
 
   @override

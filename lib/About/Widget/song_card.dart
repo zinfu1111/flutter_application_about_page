@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/Song.dart';
+import 'package:flutter_application_about_page/model/song.dart';
 
 class SongCard extends StatelessWidget {
   const SongCard({super.key, required this.song});

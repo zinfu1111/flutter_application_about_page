@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/Song.dart';
-import 'package:flutter_application_about_page/About/Widget/SongCard.dart';
+import 'package:flutter_application_about_page/model/song.dart';
+import 'package:flutter_application_about_page/about/widget/song_card.dart';
 
 class HotSongSection extends StatelessWidget {
   const HotSongSection({super.key, required this.songs});

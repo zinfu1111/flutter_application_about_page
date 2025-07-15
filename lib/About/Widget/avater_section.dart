@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/Artis.dart';
+import 'package:flutter_application_about_page/model/artist.dart';
 
 class AvaterSection extends StatelessWidget {
   const AvaterSection({super.key, required this.artist});
@@ -13,7 +13,7 @@ class AvaterSection extends StatelessWidget {
           artist.imageUrl,
           width: double.infinity,
           height: 350,
-          fit: BoxFit.fill,
+          fit: BoxFit.cover,
         ),
         Container(
           height: 350,
@@ -41,7 +41,7 @@ class AvaterSection extends StatelessWidget {
                 ),
               ),
               Text(
-                artist.subscriberCount,
+                '${artist.subscriberCount} 位訂閱者',
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 14,

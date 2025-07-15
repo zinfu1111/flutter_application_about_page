@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_about_page/Model/Album.dart';
-import 'package:flutter_application_about_page/About/Widget/AlbumCard.dart';
+import 'package:flutter_application_about_page/about/widget/album_card.dart';
+import 'package:flutter_application_about_page/model/album.dart';
 
 class AlbumsSection extends StatelessWidget {
   const AlbumsSection({super.key, required this.albums});
