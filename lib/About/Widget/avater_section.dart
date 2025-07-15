@@ -27,6 +27,16 @@ class AvaterSection extends StatelessWidget {
           ),
         ),
         Positioned(
+          top: 50,
+          left: 20,
+          child: GestureDetector(
+            child: Icon(Icons.arrow_back, color: Colors.white),
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ),
+        Positioned(
           bottom: 10,
           left: 20,
           child: Column(

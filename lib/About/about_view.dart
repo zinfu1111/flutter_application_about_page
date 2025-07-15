@@ -18,13 +18,10 @@ class AboutView extends StatelessWidget {
           children: [
             AvaterSection(artist: viewModel.artist),
             ServiceSection(),
-            if (viewModel.newProduct != null)
-              NewProductSection(
-                newProduct:
-                    viewModel.newProduct!, // Ensure newProduct is not null
-              ),
-            HotSongSection(songs: viewModel.songs),
-            AlbumsSection(albums: viewModel.albums),
+            if (viewModel.artist.newProduct != null)
+              NewProductSection(newProduct: viewModel.artist.newProduct!),
+            HotSongSection(songs: viewModel.artist.songs),
+            AlbumsSection(albums: viewModel.artist.albums),
           ],
         ),
       ),
